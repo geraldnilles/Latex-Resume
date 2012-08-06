@@ -1,4 +1,4 @@
-\documentclass[12pt, letterpaper]{letter}
+\documentclass[12pt, letterpaper]{minimal}
 
 % Set 1 inch Margins
 \usepackage[a4paper, margin=1in]{geometry}
@@ -14,15 +14,15 @@
 %-------------------------------------%
 
 % Style my name
-\newcommand{\myname}[1]{\begin{center} \Huge #1 \normalsize \\ \end{center}}
+\newcommand{\myname}[1]{\begin{center} #1  \end{center}}
 % Style the header of each section
-\newcommand{\myhead}[1]{\LARGE #1 \normalsize }
+\newcommand{\myhead}[1]{ #1 }
 % Style the company name
 \newcommand{\company}[1]{\hspace*{.5cm} \textbf{#1} }
 % Style the position title
 \newcommand{\position}[2]{\hspace*{.5cm} \emph{#1} \hfill #2 }
 % Job Skill List
-\newenvironment{skills}{\begin{list}{$\circ$}{} \setlength\parsep{0mm} \setlength\itemsep{0mm} }{\end{list}}
+\newenvironment{skills}{\begin{list}{$\circ$}{} }{\end{list}}
 % Job Skill list item
 \newcommand{\skill}[1]{ \item #1 }
 
