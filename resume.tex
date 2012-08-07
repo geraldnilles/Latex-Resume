@@ -1,79 +1,63 @@
-\documentclass[12pt, letterpaper]{minimal}
+\documentclass[12pt, letterpaper]{article}
 
 % Set 1 inch Margins
 \usepackage[letterpaper, margin=1in]{geometry}
 
 \setlength{\parindent}{0pt}
-\setlength{\parskip}{0ex plus 0ex minus 0ex}
+
+\newcommand{\myname}[1]{{\begin{center} \LARGE #1 \end{center} \par}}
+\newcommand{\myhead}[1]{{\vspace{1mm} \Large #1 \par}}
+\newcommand{\company}[1]{{\vspace{2mm} \addtolength{\leftskip}{10mm} \textbf{#1} \par}}
+\newcommand{\position}[2]{{\addtolength{\leftskip}{10mm} \emph{#1} \hfill #2 \par \vspace{1mm}}}
+\newcommand{\skill}[1]{{  \addtolength{\leftskip}{20mm} \setlength\parindent{-4mm} $\circ$ #1 \par}}
 
 
 \begin{document}
 
-% Remove page number
-%\pagestyle{empty}
-
-\newcommand{\huge}{\fontsize{24.88}{15}\selectfont}
-\newcommand{\large}{\fontsize{17.28}{15}\selectfont}
-\newcommand{\normal}{\fontsize{12}{15}\selectfont}
-
-%-------------------------------------%
-%  Custom Styling
-%-------------------------------------%
-
-% Style my name
-\newcommand{\myname}[1]{{\huge \noindent \begin{center} #1  \end{center}}}
-% Style the header of each section
-\newcommand{\myhead}[1]{{ \large \noindent \vspace{0.5cm} #1 } }
-% Style the company name
-\newcommand{\company}[1]{{ \noindent \vspace{0.2cm} \hspace*{0.5cm} \textbf{#1} }}
-% Style the position title
-\newcommand{\position}[2]{{ \noindent \hspace*{0.7cm} \emph{#1} \hfill #2 }}
-% Job Skill List
-\newenvironment{skills}{\begin{list}{ $\circ$ \hspace{0.1cm}}{\setlength\leftmargin{1.5cm} \setlength\itemindent{-0.6cm}}  }{\end{list}}
-% Job Skill list item
-\newcommand{\skill}[1]{ \item #1 }
+\pagestyle{empty}
+\raggedright
 
 \myname{Gerald M Nilles}
-1623 Thornfield Ct  \hfill (H) 847-305-3765 \\
-Roselle, IL 60172   \hfill (C) 847-420-6705 \\
+1623 Thornfield Court  \hfill (Home) 847-305-3765 \\
+Roselle, IL 60172   \hfill geraldnilles@gmail.com \\
 
-\myhead{Work Experience}\\
-    \company{Research In Motion}\\
+\myhead{Work Experience}
+    \company{Research In Motion}
     \position{Baseband Design Engineer}{Jan 2010 - Present}
-    \begin{skills}
         \skill{Designed power architecture for next generation Blackberry smartphones.}
         \skill{Designed user interface, backlight, and optical sensor circuits for Blackberry Curve 9330.}
         \skill{Wrote and executed desgin verification plans for all of circuits.}
         \skill{Used schematic and layout CAD tools when designing PCBs.}
         \skill{Simulated impedance of power delivery network over frequency to improve power trace layout.}
         \skill{Supported factory during early prototype builds and mass production.}
-    \end{skills}
-    \company{Philips Lighting}\\ 
-    \position{eFlou Electrical Engineering Intern}{June 2009 - August 2009}
-    \begin{skills}
-        \skill{Assisted in design of flourecent light ballasts.}
-        \skill{Reverse engineer a competator's design.}
-    \end{skills}
-    \company{Invensys Controls}\\
+
+    \company{University of Illinois Power Electronics Laboratory}
+    \position{Undergraduate Research Assistant}{March 2009 to December 2009}
+        \skill{Studied various topologies for minimizing current ripple and maximizing output power of photovoltaic panals.}
+        \skill{Designed and tested theoretical photovoltaic topologies.}
+
+    \company{Philips Lighting} 
+    \position{Design Engineering Intern, Electronic Flourescent Lighting}{June 2009 - August 2009}
+        \skill{Reverse engineered a competitor's ballast by drawing its schematic in CADStar, creating its build of materials, and estimating its production BOM cost.}
+        \skill{Performed IEC testing on competitor's ballast to analyze its End-of-Life behavior.}
+        \skill{Diagnosed sources of failure in defective ballasts.}
+        \skill{Performed efficiency analysis by finding major sources of power loss on a ballast trying to become NEMA Permium certified.}
+
+    \company{Invensys Controls}
     \position{Electrical Engineering Intern}{June 2007 - August 2007}
-    \begin{skills}
         \skill{Diagnosed field returns using thermal camera and thermocouples.}
-        \skill{Built ballast boards to test control circuits.}
-    \end{skills}
-\myhead{Education}\\
-    \company{Univeristy of Illinois}
-    \begin{skills}
-        \skill{Major: Electrical Engineering}
-        \skill{Minor: Computer Science}
-    \end{skills}
-\myhead{References}\\
-    \company{Abe Keane}\\
-    \position{Research In Motion - Team Lead}{847-xxx-xxxx}\\
-    \company{Parminder Mann}\\
-    \position{Research In Motion - Baseband Design Engineer}{847-xxx-xxxx}\\
+        \skill{Built and tested load boards used to verify control circuits.}
+
+\myhead{Education}
+    \company{Univeristy of Illinois at Urbana-Champaign}
+    \position{Bachelors in Engineering}{GPA 3.72/4.00}
+        \skill{Major: Electrical Engineering $-$ Minor: Computer Science}
+        \skill{Emphasis in power electronics and electric machines}
+        \skill{Graduated December 2009}
 
 \begin{center}
-US Citizen
+References available on request \par
+US Citizen \par
 \end{center}
 \end{document}
 
