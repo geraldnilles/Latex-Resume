@@ -1,7 +1,7 @@
 \documentclass[12pt, letterpaper]{minimal}
 
 % Set 1 inch Margins
-\usepackage[a4paper, margin=1in]{geometry}
+\usepackage[letterpaper, margin=1in]{geometry}
 
 \setlength{\parindent}{0pt}
 \setlength{\parskip}{0ex plus 0ex minus 0ex}
@@ -21,13 +21,13 @@
 %-------------------------------------%
 
 % Style my name
-\newcommand{\myname}[1]{\huge \begin{center} #1  \end{center} \normal}
+\newcommand{\myname}[1]{{\huge \noindent \begin{center} #1  \end{center}}}
 % Style the header of each section
-\newcommand{\myhead}[1]{ \vspace{0.5cm} \large #1 \normal }
+\newcommand{\myhead}[1]{{ \large \noindent \vspace{0.5cm} #1 } }
 % Style the company name
-\newcommand{\company}[1]{\vspace{0.2cm} \hspace*{0.5cm} \textbf{#1} }
+\newcommand{\company}[1]{{ \noindent \vspace{0.2cm} \hspace*{0.5cm} \textbf{#1} }}
 % Style the position title
-\newcommand{\position}[2]{\hspace*{0.7cm} \emph{#1} \hfill #2  }
+\newcommand{\position}[2]{{ \noindent \hspace*{0.7cm} \emph{#1} \hfill #2 }}
 % Job Skill List
 \newenvironment{skills}{\begin{list}{ $\circ$ \hspace{0.1cm}}{\setlength\leftmargin{1.5cm} \setlength\itemindent{-0.6cm}}  }{\end{list}}
 % Job Skill list item
@@ -35,7 +35,7 @@
 
 \myname{Gerald M Nilles}
 1623 Thornfield Ct  \hfill (H) 847-305-3765 \\
-Roselle, IL 60172   \hfill (C) 847-420-6705 
+Roselle, IL 60172   \hfill (C) 847-420-6705 \\
 
 \myhead{Work Experience}\\
     \company{Research In Motion}\\
