@@ -5,11 +5,17 @@
 
 \setlength{\parindent}{0pt}
 
+% This defines the style for the name/title across the top
 \newcommand{\myname}[1]{{\begin{center} \LARGE #1 \end{center} \par }}
+% This defines the style for each sub heading (Work, Education, etc..)
 \newcommand{\myhead}[1]{{\vspace{2mm} \Large #1 \par}}
+% This defines the style for the objective line
 \newcommand{\objective}[1]{{\addtolength{\leftskip}{10mm} #1 \par }}
+% This defines the style for the company name to be under under work experience
 \newcommand{\company}[1]{{\vspace{1mm} \addtolength{\leftskip}{10mm} \textbf{#1} \par}}
+% This defines the style for the position title and time 
 \newcommand{\position}[2]{{\addtolength{\leftskip}{10mm} \emph{#1} \hfill #2 \par \vspace{1mm}}}
+% THis defines the style for the skill used for each position
 \newcommand{\skill}[1]{{  \vspace{0.3mm} \addtolength{\leftskip}{20mm} \setlength\parindent{-4mm} $\circ$ #1 \par}}
 
 
@@ -22,30 +28,30 @@
 1234 Fake Street  \hfill (Home) 555-555-5555 \\
 Town, XX 11111   \hfill geraldnilles@gmail.com \\
 \myhead{Objective}
-    \objective{To obtain an electrical engineering position in consumer electronics.}
+    \objective{To obtain an electrical engineering position.}
 
 \myhead{Work Experience}
-    \company{Research In Motion}
-    \position{Baseband Design Engineer}{January 2010$-$Present}
-        \skill{Designed and validated power architecture for upcoming BlackBerry smartphone.}
+    \company{Motorola Mobility}
+    \position{Senior Staff Electrical Engineer}{April 2015$-$Present}
+    \position{Senior Electrical Engineer}{January 2013$-$April 2015}
+        \skill{Designed and validated power architecture for Droid Ultra/Maxx (2013), Droid Turbo (2014), and Moto X Play (2015).}
+        \skill{Designed and simulated power delivery network for all critical power rails.}
+        \skill{Lead cross-functional battery life team and drove down current drain in order to meet marketing goals and maximize battery life satisfaction for end consumers.}
+	\skill{Supported mass production by quickly root-causing issues and identifying short and long term solutions.}
+        \skill{Used schematic and PCB CAD tools when designing multilayer PCBs.}
+
+    \company{BlackBerry (formerly Research In Motion)}
+    \position{Baseband Design Engineer}{January 2010$-$January 2013}
+        \skill{Designed and validated power architecture for BlackBerry Q5 smartphone.}
         \skill{Designed and validated user interface, backlight, and optical sensor circuits for BlackBerry Curve 9360.}
-        \skill{Wrote and executed design verification plans for all responsible circuits.}
-        \skill{Used schematic and layout CAD tools when designing multilayer PCBs.}
-        \skill{Designed and simulated PCB layout for device's power delivery network.}
-        \skill{Travelled to support factory during early prototype builds and mass production ramp.}
-        \skill{Worked with 3rd party vendors to maximize quality of custom parts.}
 
     \company{University of Illinois Power Electronics Laboratory}
     \position{Undergraduate Research Assistant}{March 2009$-$December 2009}
-        \skill{Studied various topologies for minimizing current ripple and maximizing output power of photovoltaic panels.}
-        \skill{Designed and tested theoretical photovoltaic topologies.}
+        \skill{Studied, designed and tested various topologies for minimizing current ripple and maximizing efficiency of photovoltaic panels.}
 
     \company{Philips Lighting Electronics} 
     \position{Design Engineering Intern, Electronic Fluorescent Lighting}{May 2009$-$August 2009}
-        \skill{Reverse engineered a competitor's ballast by drawing its schematic in CADStar, creating its build of materials, and estimating its production BOM cost.}
-%        \skill{Performed IEC testing on competitor's ballast to analyze its End-of-Life behavior.}
-        \skill{Diagnosed sources of failure in defective ballasts.}
-        \skill{Performed efficiency analysis while finding major sources of power loss in a ballast seeking NEMA Premium certification.}
+        \skill{Reverse engineered a competitor's ballast by drawing its schematic, creating its build of materials, and estimating its production BOM cost.}
 
     \company{Invensys Appliance Controls}
     \position{Electrical Engineering Intern}{May 2007$-$August 2007}
