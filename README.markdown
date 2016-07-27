@@ -10,3 +10,15 @@ The resume.tex will use custom commands to format each section of the resume.
 * \position - Prints and indents the position title and date
 * \skill - creates a bulleted list of skills for each job
 
+
+# Usage
+
+Install the TexLive-Core pasckage.
+
+run 
+
+	pdflatex resume.tex
+
+it will generate the resume.pdf file.
+
+
